@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Night Code - Hackers at Your Service</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000000;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #111111;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #00ffcc;
+      font-size: 2.5em;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background-color: #1a1a1a;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #000000;
+    }
+
+    .slogan {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #00ffcc;
+    }
+
+    h2 {
+      color: #00ffcc;
+      margin-top: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background-color: #222;
+      color: #fff;
+    }
+
+    button {
+      background-color: #00ffcc;
+      cursor: pointer;
+    }
+
+    .btc-address {
+      font-size: 1.1em;
+      margin-top: 20px;
+      text-align: center;
+      color: #00ffcc;
+    }
+
+    .btc-address strong {
+      font-size: 1.3em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>The Night Code</h1>
+    <p class="slogan">Where Hackers Meet Opportunity.</p>
+  </header>
+
+  <div class="container">
+    <h2>Need Hackers? We're Here to Help!</h2>
+    <p>
+      We are a group of elite hackers offering services such as:
+      <ul style="list-style-type: disc; padding-left: 20px; color: #ccc;">
+        <li>Phishing and Data Extraction</li>
+        <li>Wallet Hijacking</li>
+        <li>Bitcoin Mining Setup</li>
+        <li>Account Takeovers</li>
+        <li>New 2025 Methods</li>
+      </ul>
+    </p>
+
+    <p>
+      Send $20 to BTC Address. Just leave your email below, and we'll contact you to discuss your request.
+    </p>
+
+    <form onsubmit="submitEmail(event)">
+      <div class="form-group">
+        <label for="email">Your Email Address Here</label>
+        <input type="email" id="email" placeholder="example@domain.com" required>
+      </div>
+      <button type="submit">Send Request</button>
+    </form>
+
+    <div class="btc-address">
+      <strong>We respond within 15 minutes of email:</strong>
+
+      <strong>bc1qtl76nxmzg0l8p5dzq268rxtd2gt37hz22ezl3k</strong>
+    </div>
+  </div>
+
+  <script>
+    function submitEmail(event) {
+      event.preventDefault();
+
+      const email = document.getElementById('email').value;
+      alert("Thank you, " + email + "! We'll contact you soon. Send your payment to the BTC address above to get started.");
+    }
+  </script>
+</body>
+</html>
